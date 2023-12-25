@@ -15,7 +15,7 @@ class Bot(Client):
     USER: User = None
     USER_ID: int = None
 
-session_string=Config.BOT_SESSION
+    session_string=Config.BOT_SESSION
 
     def __init__(self):
         super().__init__(
