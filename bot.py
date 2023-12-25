@@ -19,7 +19,7 @@ class Bot(Client):
             "my_bot",
             api_hash="a5b4f74cd5b550622c4eee4fea7285b0",
             api_id=23696595,  # Replace with your API ID
-            string_session="AQFplNMAt_g3Zo403aPpTa3f77dXHu6H0SOspgpCbdMNi18PvJRAnWRQEchkrx-_pItrk9wwIiSBpqI-NM7lBculnsPeLGcb6cd-L__9ZbmhGe4pBNwpLyRy4dTK_UNoAtoJb1YcCexcF-L59iv0SEYOlFlsRMp9FQ8iZS27K9OlVEOBUc-_3vMNMzr_vfSttITeL1Z1XJM4eQVflfgb1fDAhJ_dtsVvq7MRjIqdQtG_jPFvXQI9sPH7kudugQpe0tssa2CAUMuXAUfEP_FBEKkYTpb_3uJRJbt6YIGIa5S8v70j-Z6sD0zVOE1qJVYx36G7Z4dgN0tfYdJEBun5vBA3AD0P3AAAAAFI7DftAA",
+            session_string="AQFplNMAt_g3Zo403aPpTa3f77dXHu6H0SOspgpCbdMNi18PvJRAnWRQEchkrx-_pItrk9wwIiSBpqI-NM7lBculnsPeLGcb6cd-L__9ZbmhGe4pBNwpLyRy4dTK_UNoAtoJb1YcCexcF-L59iv0SEYOlFlsRMp9FQ8iZS27K9OlVEOBUc-_3vMNMzr_vfSttITeL1Z1XJM4eQVflfgb1fDAhJ_dtsVvq7MRjIqdQtG_jPFvXQI9sPH7kudugQpe0tssa2CAUMuXAUfEP_FBEKkYTpb_3uJRJbt6YIGIa5S8v70j-Z6sD0zVOE1qJVYx36G7Z4dgN0tfYdJEBun5vBA3AD0P3AAAAAFI7DftAA",
             plugins={"root": "plugins"},
             workers=4,
             bot_token="YOUR_BOT_TOKEN"
