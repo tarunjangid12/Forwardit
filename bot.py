@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # (c) Dark Angel
 
-from telethon import TelegramClient
+from telethon.sync import TelegramClient, events
 
 class Bot(TelegramClient):
     USER = None
@@ -16,8 +16,7 @@ class Bot(TelegramClient):
         super().__init__(
             session_name,
             api_id,
-            api_hash,
-            plugins=None
+            api_hash
         )
         self.LOGGER = LOGGER
 
@@ -27,7 +26,7 @@ class Bot(TelegramClient):
         self.LOGGER(name).info(
             f"@{usr_bot_me.username} started!"
         )
-        self.USER, self.USER_ID = await self.get_user_info()
+        self.USER, self.USER_ID = await self.get_me()
 
     async def stop(self, *args):
         await super().disconnect()
@@ -35,4 +34,11 @@ class Bot(TelegramClient):
 
 
 bot = Bot()
-bot.run()
+
+# Register event loop to handle stop
+@bot.on(events.NewMessage(pattern='/stop'))
+async def stop_bot(event):
+    await bot.stop()
+
+bot.start()
+bot.run_until_disconnected()
