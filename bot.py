@@ -2,13 +2,6 @@
 # -*- coding: utf-8 -*-
 # (c) Dark Angel
 
-from pyrogram import Client, __version__
-
-from config import Config
-from config import LOGGER
-
-from user import User
-
 from telethon import TelegramClient
 
 class Bot(TelegramClient):
