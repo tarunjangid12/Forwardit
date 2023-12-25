@@ -15,11 +15,12 @@ class Bot(Client):
     USER: User = None
     USER_ID: int = None
 
+session_string=Config.BOT_SESSION
+
     def __init__(self):
         super().__init__(
             Config.BOT_SESSION,
             api_hash=Config.API_HASH,
-            session_string=Config.BOT_SESSION,
             api_id=Config.API_ID,
             plugins={
                 "root": "plugins"
